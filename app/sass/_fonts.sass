@@ -1,0 +1,35 @@
+// font-weight helper:
+
+// 100 Extra Light or Ultra Light;
+// 200 Light or Thin; 300 Book or Demi;
+// 400 Regular or Normal;
+// 500 Medium;
+// 600 Semibold or Demibold;
+// 700 Bold;
+// 800 Black or Extra Bold or Heavy;
+// 900 Extra Black or Fat or Ultra Black
+
+
+@mixin font($f-name, $f-style, $f-weight, $f-url)
+	@font-face
+		font-family: $f-name
+		font-style: $f-style
+		font-weight: $f-weight
+		src: url($f-url) format('woff2')
+
+
+@include font('ProximaNova', normal, 900, '../webfonts/ProximaNovaBlack.woff2')
+@include font('ProximaNova', normal, 800, '../webfonts/ProximaNovaExtraBold.woff2')
+@include font('ProximaNova', normal, 700, '../webfonts/ProximaNovaBold.woff2')
+@include font('ProximaNova', normal, 600, '../webfonts/ProximaNovaSemiBold.woff2')
+@include font('ProximaNova', normal, 400, '../webfonts/ProximaNovaRegular.woff2')
+@include font('ProximaNova', normal, 300, '../webfonts/ProximaNovaLight.woff2')
+
+
+
+@include font('Exo2', normal, 900, '../webfonts/Exo2--Black.woff2')
+@include font('Exo2', normal, 800, '../webfonts/Exo2-ExtraBold.woff2')
+@include font('Exo2', normal, 700, '../webfonts/Exo2-Bold.woff2')
+@include font('Exo2', normal, 600, '../webfonts/Exo2-SemiBold.woff2')
+@include font('Exo2', normal, 400, '../webfonts/Exo2-Regular.woff2')
+@include font('Exo2', normal, 300, '../webfonts/Exo2-Light.woff2')

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Онлайн сервис по подбору недвижимости в Краснодаре</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="img/favicon.ico">
+	<meta name="theme-color" content="#000">
+	
+	<link rel="stylesheet" href="css/app.min.css">
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-flex.min.css">
+	<link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+</head>
+
+<body>
+
+	<header class="header container">
+		<div class="header__container container">
+		
+			<a href="index.html" class="header__logo">
+				<img src="img/header--logo.png" alt="logo">
+			</a>
+
+			<a href="#" class="header__select">
+				<img src="img/set.svg" alt="">
+				<span>Подобрать квартиру</span>
+			</a>
+
+			<a href="#" class="btn">Войти</a>
+
+		</div>
+	</header>
+
+	<section class="hero">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-8">
+					<h1>Поиск и подбор квартиры в аренду в Москве</h1>
+					<p>Агрегатор квартир от собственников и с крупнейших площадок недвижимости</p>
+					
+				</div>
+				<form class="hero__inputs">
+					<div class="hero__select">
+						<p>Станция метро:</p>
+						<select name='metro' id='' class='form__select form__select--metro'>
+							<option disabled selected value>Выберите метро</option>
+							<option value='2'>Метро 1</option>
+							<option value='3'>Метро 2</option>
+							<option value='4'>Метро 3</option>
+						</select>
+					</div>
+
+					<div class="hero__radio">
+						<p>Количество комнат:</p>
+						<div class="hero__radio_wrap">
+							<label>
+								1
+								<input type="radio" value="1" name="room">
+							</label>
+							<label>
+								2
+								<input type="radio" value="2" name="room">
+							</label>
+							<label>
+								3
+								<input type="radio" value="3" name="room">
+							</label>
+							<label>
+								4+
+								<input type="radio" value="4+" name="room">
+							</label>
+						</div>
+
+					</div>
+					
+					<a href="#" class="hero__inputs_btn btn btn--accent"><img src="img/search.svg" alt="">Найти квартиру</a>
+				</form>
+			</div>
+
+
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			
+			<h2>В чём преимущество сервиса <br>для профессионального риэлтора?</h2>
+			
+			<div class="content__list">
+
+				<div class="content__item">
+					<div class="content__img"><img src="img/website.svg" alt=""></div>
+					<p><b>База собирается с крупных <br>российских площадок <br>недвижимости</b></p>
+					<p>Вам не нужно держать кучу открытых вкладок, всё в едином окне. Отбраковывыйте те объявления, которые вам не подходят. Вносите в избранное те, которые показались вам </p>
+				</div>
+				<div class="content__item">
+					<div class="content__img"><img src="img/update.svg" alt=""></div>
+					<p><b>Всегда актуальные данные <br>о квартирах (аренда и продажа)</b></p>
+					<p>Мы собираем только те объявления, что помечены площадками как "От собственника". Система чистит те объявления, что сняты с публикации или заблокированы самой площадкой.</p>
+				</div>
+				<div class="content__item">
+					<div class="content__img"><img src="img/notification.svg" alt=""></div>
+					<p><b>Автоматическое проверка <br>новых объектов и уведомление <br>на почту и смс</b></p>
+					<p>Каждый 30 минут система проверяет, появились ли новые объекты по вашим криетериям и оперативно уведомляет вас на почту и смс. Это особенно удобно если вы уже проводите показ своему клиенту, чтобы можно было сразу посмотреть другой объект, не перенося встречу на другое время.</p>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<section class="proposal">
+		<div class="proposal__container container">
+			<h2 class="proposal__title">Актуальные предложения</h2>
+			<div class="row">
+				<div class="col">
+					<a href="#" class="proposal__item">
+						<div class="swiper proposal__slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+						<div class="proposal__info">
+							<div class="proposal__info_price">
+								<p><span>55 000 </span>₽/мес</p>
+							</div>
+							<div class="proposal__info_area">
+								<div>
+									<span></span>
+									<p>1-комн.</p>
+								</div>
+								<div>
+									<span></span>
+									<p>40 м2</p>
+								</div>
+							</div>
+							<div class="proposal__info_desc">
+								<p>Однокомнатная квартира в стиле “лофт” для маленькой семьи</p>
+							</div>
+							<div class="proposal__info_bottom">
+								<div class="proposal__info_metro">
+									<img src="img/moscow.svg" alt="">
+									<p>Пушкинская</p>
+								</div>
+								<button class="proposal__info_fav">
+									<img src="img/heart.svg" alt="">
+								</button>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="proposal__item">
+						<div class="swiper proposal__slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+						<div class="proposal__info">
+							<div class="proposal__info_price">
+								<p><span>55 000 </span>₽/мес</p>
+							</div>
+							<div class="proposal__info_area">
+								<div>
+									<span></span>
+									<p>1-комн.</p>
+								</div>
+								<div>
+									<span></span>
+									<p>40 м2</p>
+								</div>
+							</div>
+							<div class="proposal__info_desc">
+								<p>Однокомнатная квартира в стиле “лофт” для маленькой семьи</p>
+							</div>
+							<div class="proposal__info_bottom">
+								<div class="proposal__info_metro">
+									<img src="img/moscow.svg" alt="">
+									<p>Пушкинская</p>
+								</div>
+								<button class="proposal__info_fav">
+									<img src="img/heart.svg" alt="">
+								</button>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col">
+					<a href="#" class="proposal__item">
+						<div class="swiper proposal__slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+						<div class="proposal__info">
+							<div class="proposal__info_price">
+								<p><span>55 000 </span>₽/мес</p>
+							</div>
+							<div class="proposal__info_area">
+								<div>
+									<span></span>
+									<p>1-комн.</p>
+								</div>
+								<div>
+									<span></span>
+									<p>40 м2</p>
+								</div>
+							</div>
+							<div class="proposal__info_desc">
+								<p>Однокомнатная квартира в стиле “лофт” для маленькой семьи</p>
+							</div>
+							<div class="proposal__info_bottom">
+								<div class="proposal__info_metro">
+									<img src="img/moscow.svg" alt="">
+									<p>Пушкинская</p>
+								</div>
+								<button class="proposal__info_fav">
+									<img src="img/heart.svg" alt="">
+								</button>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="proposal__item">
+						<div class="swiper proposal__slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+						<div class="proposal__info">
+							<div class="proposal__info_price">
+								<p><span>55 000 </span>₽/мес</p>
+							</div>
+							<div class="proposal__info_area">
+								<div>
+									<span></span>
+									<p>1-комн.</p>
+								</div>
+								<div>
+									<span></span>
+									<p>40 м2</p>
+								</div>
+							</div>
+							<div class="proposal__info_desc">
+								<p>Однокомнатная квартира в стиле “лофт” для маленькой семьи</p>
+							</div>
+							<div class="proposal__info_bottom">
+								<div class="proposal__info_metro">
+									<img src="img/moscow.svg" alt="">
+									<p>Пушкинская</p>
+								</div>
+								<button class="proposal__info_fav">
+									<img src="img/heart.svg" alt="">
+								</button>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col">
+					<a href="#" class="proposal__item">
+						<div class="swiper proposal__slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+						<div class="proposal__info">
+							<div class="proposal__info_price">
+								<p><span>55 000 </span>₽/мес</p>
+							</div>
+							<div class="proposal__info_area">
+								<div>
+									<span></span>
+									<p>1-комн.</p>
+								</div>
+								<div>
+									<span></span>
+									<p>40 м2</p>
+								</div>
+							</div>
+							<div class="proposal__info_desc">
+								<p>Однокомнатная квартира в стиле “лофт” для маленькой семьи</p>
+							</div>
+							<div class="proposal__info_bottom">
+								<div class="proposal__info_metro">
+									<img src="img/moscow.svg" alt="">
+									<p>Пушкинская</p>
+								</div>
+								<button class="proposal__info_fav">
+									<img src="img/heart.svg" alt="">
+								</button>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="proposal__item">
+						<div class="swiper proposal__slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+						<div class="proposal__info">
+							<div class="proposal__info_price">
+								<p><span>55 000 </span>₽/мес</p>
+							</div>
+							<div class="proposal__info_area">
+								<div>
+									<span></span>
+									<p>1-комн.</p>
+								</div>
+								<div>
+									<span></span>
+									<p>40 м2</p>
+								</div>
+							</div>
+							<div class="proposal__info_desc">
+								<p>Однокомнатная квартира в стиле “лофт” для маленькой семьи</p>
+							</div>
+							<div class="proposal__info_bottom">
+								<div class="proposal__info_metro">
+									<img src="img/moscow.svg" alt="">
+									<p>Пушкинская</p>
+								</div>
+								<button class="proposal__info_fav">
+									<img src="img/heart.svg" alt="">
+								</button>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col">
+					<a href="#" class="proposal__item">
+						<div class="swiper proposal__slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+						<div class="proposal__info">
+							<div class="proposal__info_price">
+								<p><span>55 000 </span>₽/мес</p>
+							</div>
+							<div class="proposal__info_area">
+								<div>
+									<span></span>
+									<p>1-комн.</p>
+								</div>
+								<div>
+									<span></span>
+									<p>40 м2</p>
+								</div>
+							</div>
+							<div class="proposal__info_desc">
+								<p>Однокомнатная квартира в стиле “лофт” для маленькой семьи</p>
+							</div>
+							<div class="proposal__info_bottom">
+								<div class="proposal__info_metro">
+									<img src="img/moscow.svg" alt="">
+									<p>Пушкинская</p>
+								</div>
+								<button class="proposal__info_fav">
+									<img src="img/heart.svg" alt="">
+								</button>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="proposal__item">
+						<div class="swiper proposal__slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+						<div class="proposal__info">
+							<div class="proposal__info_price">
+								<p><span>55 000 </span>₽/мес</p>
+							</div>
+							<div class="proposal__info_area">
+								<div>
+									<span></span>
+									<p>1-комн.</p>
+								</div>
+								<div>
+									<span></span>
+									<p>40 м2</p>
+								</div>
+							</div>
+							<div class="proposal__info_desc">
+								<p>Однокомнатная квартира в стиле “лофт” для маленькой семьи</p>
+							</div>
+							<div class="proposal__info_bottom">
+								<div class="proposal__info_metro">
+									<img src="img/moscow.svg" alt="">
+									<p>Пушкинская</p>
+								</div>
+								<button class="proposal__info_fav">
+									<img src="img/heart.svg" alt="">
+								</button>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="proposal__btn">
+				<a class="proposal__btn_item btn btn-accent"><img src="img/menu.svg" alt="">Показать все предложения</a>
+			</div>
+			
+		</div>
+	</section>
+
+	<section class="video">
+		<div class="container">
+			<div class="row justify-content-center align-items-center">
+				
+				<div class="col-xl-4 col-lg-4">
+					<p>
+						Да что мы расказываем,
+						<b>
+							<br>Просто смотрите
+							<br>как это работает!
+						</b>
+					</p>
+				</div>
+				<div class="col-xl-7 col-lg-8">
+					<img src="img/hands.png" alt="">
+					<iframe width="1663" height="738" src="https://www.youtube.com/embed/g0O8gMe9F7w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="access">
+		<div class="container">
+			
+			<h2>Получите ранний доступ к сервису по выгодной цене!</h2>
+			<p>Для этого зарегистрируйтесь в один клик на сайте <br>и вступите в нашу закрытую группу Вконтакте</p>
+
+			<a href="#" class="btn btn--accent">Получить ранний доступ</a>
+
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__container container">
+
+			<div class="footer__logo">
+				<a href="#"><img src="img/footer--logo.png" alt=""></a>
+			</div>
+
+			<p>
+				Техническая поддержка
+				<br>
+				<a href="mailto:contact@vhata.ru">contact@vhata.ru</a>
+			</p>
+			<p>
+				<a href="#">Политика конфединциальности</a>
+				<br>
+				<a href="#">Договор офренты</a>
+			</p>
+			
+		</div>
+	</footer>
+
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/slider.js"></script>
+
+</body>
+
+
+</html>

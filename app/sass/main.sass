@@ -32,6 +32,7 @@
 	padding: 22px 0
 	transition: all .6s
 	z-index: 1001
+	background: #fff
 
 	&__container
 		position: relative
@@ -96,6 +97,10 @@
 	&__select
 		max-width: 270px
 		width: 100%
+
+		select
+			border: 1px solid $bg
+			box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.04)
 
 		p
 			margin-bottom: 10px
@@ -204,7 +209,6 @@
 		margin-bottom: 45px
 
 	.col
-		max-width: 25%
 		display: flex
 		flex-direction: column
 		gap: 30px
@@ -214,6 +218,7 @@
 		display: flex
 		flex-direction: column
 		gap: 10px
+		background: #fff
 
 		&_price
 			p
@@ -287,7 +292,6 @@
 			align-items: center
 			justify-content: center
 			gap: 10px
-
 
 .access
 	padding: 85px 0
@@ -475,6 +479,12 @@
 			right: 0
 			top: 0
 
+.swiper-slide
+	
+	img
+		object-fit: cover
+		width: 100%
+
 .swiper-button-next,.swiper-button-prev
 	background: $accent
 	width: 30px !important
@@ -490,11 +500,347 @@
 @import "media" // Always at the end
 
 
+//--------------------Projects--------------------
+.projects
+	background: #F6F8F9
+
+.controls
+	padding-top: 35px
+	padding-bottom: 10px
+	
+	&__container
+		padding: 25px
+		padding-bottom: 0
+		background: #fff
+		border-radius: 3px
+
+	&__inputs
+		margin-bottom: 35px
+
+	&__radio
+		margin-right: 40px
+
+		label
+			border: 1px solid $bg
+
+	&__price
+		margin-right: 30px
+	
+		p
+			margin-bottom: 10px
+			font-size: 14px
+			font-weight: 600
+
+		&_wrap
+			display: flex
+			gap: 15px
+
+			label
+				display: flex
+				align-items: center
+				gap: 10px
+				margin-bottom: 0
+				font-size: 16px
+				font-weight: 600
+
+			input
+				border: 1px solid $bg
+				height: 55px
+				width: 85px
+				line-height: 55px
+				padding: 0
+				text-align: center
+				color: #8B8B8B
+				padding: 0 5px
+
+				&::placeholder
+					color: #8B8B8B
+
+	&__bottom
+		display: flex
+		justify-content: space-between
+
+	&__tabs
+		
+		&_list
+			display: flex
+			height: 55px
+
+		&_item
+			font-size: 16px
+			font-weight: 600
+			display: flex
+			align-items: center
+			padding: 0 35px
+			border-bottom: 3px solid transparent
+			padding-left: 0
+
+			svg
+				margin-right: 10px
+
+			&::before
+				content: ''
+				height: 32px
+				// width: 1px
+				border: 1px solid $bg
+				margin-right: 35px
+
+			&.active
+				color: $accent
+				border-bottom: 3px solid $accent
+
+				svg
+
+					path
+						fill: $accent
+
+.projects-content
+	padding-bottom: 70px
+
+	&__filters
+		display: flex
+		justify-content: space-between
+		align-items: center
+		border-bottom: 1px solid $bg
+		padding-bottom: 20px
+
+		p
+			font: size 20px
+			font-weight: 600
+
+			span
+				font-weight: 800
+
+	&__inputs
+		display: flex
+		gap: 15px
+		
+
+		select
+			background-image: url(../img/arrow.svg)
+			background-repeat: no-repeat
+			background-position: bottom 50% right 20px
+			height: 55px
+
+		&_price
+			display: flex
+			align-items: center
+			gap: 15px
+			font-weight: 600
+			margin-bottom: 0
+
+			select
+				width: 175px
+
+		&_date
+
+			select
+				width: 250px
+
+	&__items
+
+		&_wrap
+			margin-bottom: 30px
+
+.pagination
+	display: flex
+	align-items: center
+	justify-content: center
+
+	ul
+		display: flex
+		gap: 5px
+
+		li
+			width: 35px
+			height: 35px
+
+		a
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 100%
+			height: 100%
+			font-size: 20px
+			font-weight: 700
+			color: #fff
+			background: #C6C6C6
+			border-radius: 3px
+			transition: .6s all
+
+			&.active
+				background: $accent
+
+			&:hover
+				background: $bg
+
+	&__prev,
+	&__next
+		background: transparent !important
+
+	&__prev
+		transform: rotate(90deg)
+
+		svg
+
+			path
+				fill: #C6C6C6
+
+	&__next
+		transform: rotate(-90deg)
+
+.banner
+	padding-bottom: 70px
+	overflow: visible
+
+	&__wrap
+		padding: 50px
+		padding-bottom: 60px
+		background: #fff
+		border-radius: 3px
+		box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.04)
+		display: flex
+		position: relative
+
+	&__img
+		position: absolute
+		bottom: 0
+		right: 0
+
+	&__text
+		max-width: 620px
+		display: flex
+		flex-direction: column
+
+	&__title
+		font-size: 35px
+		font-weight: 800
+		margin-bottom: 15px
+
+	&__subtitle
+		font-size: 18px
+		margin-bottom: 20px
+		
+		span
+			font-weight: 800
+
+	&__desc
+		font-size: 16px
+
+	&__price
+		font-size: 25px
+		color: $accent
+		font-weight: 800
+		text-transform: uppercase
+		margin-bottom: 20px
+
+		span
+			color: #000
+
+	&__btn
+		display: flex
+		align-items: center
+		justify-content: center
+		background: $accent
+		color: #fff
+		width: 180px
+		height: 55px
+		border-radius: 3px
+
+.map
+	height: 930px
+
+	iframe
+		width: 100%
+		height: 100%
+
+@media only screen and (max-width: 1200px)
+	.controls
+		&__inputs
+			gap: 5px
+
+			&_btn
+				height: 45px
+				display: flex
+				align-items: center
+
+		&__select
+			max-width: 200px
+
+			select
+				height: 45px
+
+		&__radio
+			margin-right: 15px
+			label
+				width: 35px
+				height: 45px
+
+		&__price
+			input
+				height: 45px
+				width: 70px
+	
+	.video
+		img
+			max-width: 100%
+	
+	.map
+		height: 600px
+
 @media only screen and (max-width: 992px)
 	.hero
 		&__inputs
 			&_btn
 				padding: 0 20px
+
+	.banner
+		&__img
+			img
+				height: 300px
+
+		&__btn
+			align-self: center
+
+	.controls
+		&__inputs
+			flex-direction: column
+			align-items: flex-start
+			gap: 25px
+
+			&_btn
+				align-self: center
+				justify-content: center
+
+		&__select
+			max-width: 100%
+
+		&__bottom
+			flex-direction: column
+
+		&__tabs
+			align-self: center
+
+	.projects-content
+		padding-bottom: 35px
+		&__inputs
+			&_price
+				select
+					max-width: 130px
+
+			&_date
+				select
+					max-width: 200px
+
+	.map
+		height: 400px
+
+	.video
+		iframe
+			max-width: 317px
+			max-height: 237px
+			top: 58px
+			left: 203px
 
 @media only screen and (max-width: 767px)
 	.header
@@ -512,6 +858,42 @@
 
 	.btn
 		padding: 0 20px
+
+	.projects-content
+		&__filters
+			flex-direction: column
+			align-items: flex-start
+
+			p
+				margin-bottom: 10px
+
+		&__inputs
+			flex-direction: column
+			align-items: flex-start
+			max-width: 100%
+			width: 100%
+
+			&_price
+				flex-direction: column
+				align-items: flex-start
+				gap: 5px
+
+			&_price,
+			&_date
+				max-width: 100%
+				width: 100%
+
+				select
+					width: 100%
+					max-width: 100%
+
+	.video
+		iframe
+			max-width: 234px
+			max-height: 175px
+			top: 42px
+			left: 154px
+
 
 @media only screen and (max-width: 576px)
 	.header
@@ -533,5 +915,47 @@
 			align-items: flex-start
 			padding: 0 15px
 
+	.controls
+		&__inputs
+			padding: 0
+
 	.btn
 		padding: 0 10px
+
+	.banner
+		padding-bottom: 30px
+		
+		&__wrap
+			padding: 30px
+
+		&__img
+			display: none
+
+		&__title
+			font-size: 26px
+		
+		&__subtitle
+			font-size: 16px
+			margin-bottom: 15px
+
+		&__price
+			font-size: 20px
+
+	.map
+		height: 300px
+
+	.video
+		p
+			text-align: left
+		
+		b
+			font-size: 26px
+			width: 100%
+
+		img
+			display: none
+
+		iframe
+			max-width: 100%
+			max-height: 100%
+			position: static

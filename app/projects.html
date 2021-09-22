@@ -41,33 +41,35 @@
 				
 				<div class="hero__select controls__select">
 					<p>Станция метро:</p>
-					<select name='metro' id='' class='form__select form__select--metro'>
-						<option disabled selected value>Выберите метро</option>
-						<option value='2'>Метро 1</option>
-						<option value='3'>Метро 2</option>
-						<option value='4'>Метро 3</option>
-					</select>
+					<div class="select-wrap select-wrap--projects">
+						<select name='metro' id='' class='form__select form__select--metro'>
+							<option disabled selected value>Выберите метро</option>
+							<option value='2'>Метро 1</option>
+							<option value='3'>Метро 2</option>
+							<option value='4'>Метро 3</option>
+						</select>
+					</div>
 				</div>
 
 				<div class="hero__radio controls__radio">
 					<p>Количество комнат:</p>
 					<div class="hero__radio_wrap">
-						<label>
-							1
-							<input type="radio" value="1" name="room">
-						</label>
-						<label>
-							2
-							<input type="radio" value="2" name="room">
-						</label>
-						<label>
-							3
-							<input type="radio" value="3" name="room">
-						</label>
-						<label>
-							4+
-							<input type="radio" value="4+" name="room">
-						</label>
+						<div class="toggle">
+							<input type="radio" class="radio" name="radio" id="toggle__input1">
+							<label for="toggle__input1" class="label" value="1">1</label>
+						</div>
+						<div class="toggle">
+							<input type="radio" class="radio" name="radio" id="toggle__input2">
+							<label for="toggle__input2" class="label" value="2">2</label>
+						</div>
+						<div class="toggle">
+							<input type="radio" class="radio" name="radio" id="toggle__input3">
+							<label for="toggle__input3" class="label" value="3">3</label>
+						</div>
+						<div class="toggle">
+							<input type="radio" class="radio" name="radio" id="toggle__input4">
+							<label for="toggle__input4" class="label" value="4+">4</label>
+						</div>
 					</div>
 
 				</div>
@@ -81,7 +83,7 @@
 						</label>
 						<label>
 							До
-							<input type="number" min="100000" placeholder="100 000">
+							<input type="number" max="100000" placeholder="100 000">
 						</label>
 					</div>
 				</div>
@@ -91,7 +93,34 @@
 			</form>
 
 			<div class="controls__bottom">
-				<div class="controls__bubbles">1</div>
+				<div class="controls__bubbles">
+					<ul>
+						<li>
+							<div class="controls__bubbles_item">
+								<span>Алексеевская</span>
+								<button type="button"><img src="img/cross.svg" alt=""></button>
+							</div>
+						</li>
+						<li>
+							<div class="controls__bubbles_item">
+								<span>Алексеевская</span>
+								<button type="button"><img src="img/cross.svg" alt=""></button>
+							</div>
+						</li>
+						<li>
+							<div class="controls__bubbles_item">
+								<span>Алексеевская</span>
+								<button type="button"><img src="img/cross.svg" alt=""></button>
+							</div>
+						</li>
+						<li>
+							<div class="controls__bubbles_item">
+								<span>Алексеевская</span>
+								<button type="button"><img src="img/cross.svg" alt=""></button>
+							</div>
+						</li>
+					</ul>
+				</div>
 				
 				<div class="controls__tabs tabs">
 					<ul class="controls__tabs_list tabs__list">

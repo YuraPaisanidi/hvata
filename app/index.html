@@ -47,35 +47,37 @@
 				<form class="hero__inputs">
 					<div class="hero__select">
 						<p>Станция метро:</p>
-						<select name='metro' id='' class='form__select form__select--metro'>
-							<option disabled selected value>Выберите метро</option>
-							<option value='2'>Метро 1</option>
-							<option value='3'>Метро 2</option>
-							<option value='4'>Метро 3</option>
-						</select>
+						<div class="select-wrap">
+							<select name='metro' id='' class='form__select form__select--metro'>
+								<option disabled selected value>Выберите метро</option>
+								<option value='2'>Метро 1</option>
+								<option value='3'>Метро 2</option>
+								<option value='4'>Метро 3</option>
+							</select>
+						</div>
 					</div>
 
 					<div class="hero__radio">
 						<p>Количество комнат:</p>
-						<div class="hero__radio_wrap">
-							<label>
-								1
-								<input type="radio" value="1" name="room">
-							</label>
-							<label>
-								2
-								<input type="radio" value="2" name="room">
-							</label>
-							<label>
-								3
-								<input type="radio" value="3" name="room">
-							</label>
-							<label>
-								4+
-								<input type="radio" value="4+" name="room">
-							</label>
-						</div>
 
+						<div class="hero__radio_wrap">
+							<div class="toggle">
+								<input type="radio" class="radio" name="radio" id="toggle__input1">
+								<label for="toggle__input1" class="label" value="1">1</label>
+							</div>
+							<div class="toggle">
+								<input type="radio" class="radio" name="radio" id="toggle__input2">
+								<label for="toggle__input2" class="label" value="2">2</label>
+							</div>
+							<div class="toggle">
+								<input type="radio" class="radio" name="radio" id="toggle__input3">
+								<label for="toggle__input3" class="label" value="3">3</label>
+							</div>
+							<div class="toggle">
+								<input type="radio" class="radio" name="radio" id="toggle__input4">
+								<label for="toggle__input4" class="label" value="4+">4</label>
+							</div>
+						</div>
 					</div>
 					
 					<a href="#" class="hero__inputs_btn btn btn--accent"><img src="img/search.svg" alt="">Найти квартиру</a>

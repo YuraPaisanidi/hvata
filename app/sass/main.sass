@@ -98,6 +98,10 @@
 		max-width: 270px
 		width: 100%
 
+		&_wrap
+			&::after
+				
+
 		select
 			border: 1px solid $bg
 			box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.04)
@@ -118,27 +122,36 @@
 			display: flex
 			gap: 3px
 
-		input
-			display: none
+.toggle
 
-		input[type=radio]:checked
-		+ label
-			background: #000
+	input
+		display: none
 
-		label
-			width: 45px
-			height: 55px
-			background: #fff
-			font-size: 23px
-			border-radius: 3px
-			box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.04)
-			display: flex
-			align-items: center
-			justify-content: center
-			margin-bottom: 0
+	label
+		width: 45px
+		height: 55px
+		background: #fff
+		font-size: 23px
+		border-radius: 3px
+		box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.04)
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-bottom: 0
 
-			&:hover
-				cursor: pointer
+		&:hover
+			cursor: pointer
+
+
+	input[type="radio"]
+		display: none
+
+	input[type="radio"]:checked + label
+		background-color: $accent
+		color: #fff
+
+	input[type="radio"] + label
+
 
 .content
 	padding-top: 75px
@@ -473,12 +486,6 @@
 		width: 100%
 		height: 55px
 
-		&::after
-			position: absolute
-			content: url(../img/arrow.svg)
-			right: 0
-			top: 0
-
 .swiper-slide
 	
 	img
@@ -560,7 +567,32 @@
 		display: flex
 		justify-content: space-between
 
+	&__bubbles
+		
+		ul
+			display: flex
+			flex-wrap: wrap
+			gap: 10px
+			padding-bottom: 10px
+
+		&_item
+			min-width: 120px
+			border: 1px solid $accent
+			border-radius: 17px
+			padding: 5px 10px
+
+			span
+				font-weight: 600
+
+			button
+				background: transparent
+				border: none
+
+
+
 	&__tabs
+		display: flex
+		align-items: flex-end
 		
 		&_list
 			display: flex
@@ -754,6 +786,15 @@
 		width: 100%
 		height: 100%
 
+.select-wrap
+	position: relative
+
+	&::after
+		position: absolute
+		content: url(../img/arrow.svg)
+		right: 20px
+		top: 38%
+
 @media only screen and (max-width: 1200px)
 	.controls
 		&__inputs
@@ -787,6 +828,13 @@
 	
 	.map
 		height: 600px
+
+	.select-wrap--projects
+		position: relative
+
+		&::after
+			right: 10px
+			top: 35%
 
 @media only screen and (max-width: 992px)
 	.hero

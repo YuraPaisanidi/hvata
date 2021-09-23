@@ -512,7 +512,7 @@
 	background: #F6F8F9
 
 .controls
-	padding-top: 35px
+	padding-top: 110px
 	padding-bottom: 10px
 	
 	&__container
@@ -984,10 +984,45 @@
 	justify-content: space-between
 	align-items: center
 
+.footer-page
+	background-color: #fff
+	font-size: 16px
+
+	&__container
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		align-items: center
+		padding: 20px 15px
+		border-top: 1px solid #fff
+
+	a
+		@extend .link
+		color: $accent
+		display: inline-block
+
+	img
+		margin-right: 5px
+	
+	&__right
+		text-align: right
+		font-size: 14px
+
+		a
+			text-decoration: underline
+
+		span
+			display: block
+			color: #808080
+
 
 
 @media only screen and (max-width: 1200px)
+	.header__logo
+		max-width: 150px
+
 	.controls
+		padding-top: 80px
 		&__inputs
 			gap: 5px
 
@@ -1027,36 +1062,15 @@
 			right: 10px
 			top: 35%
 
-.footer-page
-	background-color: #fff
-	font-size: 16px
+	.header-page
+		&__nav
+			margin-right: 20px
 
-	&__container
-		display: flex
-		justify-content: space-between
-		flex-wrap: wrap
-		align-items: center
-		padding: 20px 15px
-		border-top: 1px solid #fff
+			a
+				padding: 25px 0
 
-	a
-		@extend .link
-		color: $accent
-		display: inline-block
-
-	img
-		margin-right: 5px
-	
-	&__right
-		text-align: right
-		font-size: 14px
-
-		a
-			text-decoration: underline
-
-		span
-			display: block
-			color: #808080
+			li
+				margin-right: 15px
 
 @media only screen and (max-width: 992px)
 	.hero
@@ -1073,6 +1087,8 @@
 			align-self: center
 
 	.controls
+		padding-top: 60px
+
 		&__inputs
 			flex-direction: column
 			align-items: flex-start
@@ -1111,6 +1127,42 @@
 			max-height: 237px
 			top: 58px
 			left: 203px
+
+	.header-page
+		padding: 5px 0
+
+		&__nav
+			flex-direction: column
+			margin-right: 0
+
+			li
+				margin-right: 0
+				margin-bottom: 10px
+
+			a
+				padding: 10px 0
+
+	.hamburger
+		display: block
+
+	.nav
+		position: fixed
+		flex-direction: column
+		justify-content: flex-start
+		position: fixed
+		overflow: auto
+		bottom: 100%
+		left: 0
+		right: 0
+		background-color: #fff
+		z-index: 1001
+		height: 100%
+		width: 100%
+		transition: all .6s
+		padding: 70px
+
+		&--active
+			bottom: -70px
 
 @media only screen and (max-width: 767px)
 	.header
@@ -1171,7 +1223,6 @@
 
 		&__right
 			text-align: center
-
 
 @media only screen and (max-width: 576px)
 	.header

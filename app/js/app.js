@@ -1,13 +1,13 @@
 $(function() {
 
 //------------------------------гамбургер-----------------------------
-$('.hamburger').click(function() {
-	$(this).toggleClass('hamburger--active');
-	$('body').toggleClass('body--no-scroll');
-	$('.nav').toggleClass('nav--active');
-	$('.header').toggleClass('header--menu');
-	$('body').toggleClass('no-scroll');
-});
+// $('.hamburger').click(function() {
+// 	$(this).toggleClass('hamburger--active');
+// 	$('body').toggleClass('body--no-scroll');
+// 	$('.nav').toggleClass('nav--active');
+// 	$('.header-page').toggleClass('header-page--menu');
+// 	$('body').toggleClass('no-scroll');
+// });
 
 //-------------------------------попандер---------------------------------------
   $('.modal').popup({transition: 'all 0.3s'});

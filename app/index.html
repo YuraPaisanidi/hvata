@@ -57,25 +57,25 @@
 						</div>
 					</div>
 
-					<div class="hero__radio">
+					<div class="hero__checkbox">
 						<p>Количество комнат:</p>
 
-						<div class="hero__radio_wrap">
+						<div class="hero__checkbox_wrap">
 							<div class="toggle">
-								<input type="radio" class="radio" name="radio" id="toggle__input1">
+								<input type="checkbox" class="checkbox" name="checkbox" id="toggle__input1">
 								<label for="toggle__input1" class="label" value="1">1</label>
 							</div>
 							<div class="toggle">
-								<input type="radio" class="radio" name="radio" id="toggle__input2">
+								<input type="checkbox" class="checkbox" name="checkbox" id="toggle__input2">
 								<label for="toggle__input2" class="label" value="2">2</label>
 							</div>
 							<div class="toggle">
-								<input type="radio" class="radio" name="radio" id="toggle__input3">
+								<input type="checkbox" class="checkbox" name="checkbox" id="toggle__input3">
 								<label for="toggle__input3" class="label" value="3">3</label>
 							</div>
 							<div class="toggle">
-								<input type="radio" class="radio" name="radio" id="toggle__input4">
-								<label for="toggle__input4" class="label" value="4+">4</label>
+								<input type="checkbox" class="checkbox" name="checkbox" id="toggle__input4">
+								<label for="toggle__input4" class="label" value="4+">4+</label>
 							</div>
 						</div>
 					</div>
@@ -162,8 +162,10 @@
 									<img src="img/moscow.svg" alt="">
 									<p>Пушкинская</p>
 								</div>
-								<button class="proposal__info_fav">
-									<img src="img/heart.svg" alt="">
+								<button type="button" class="proposal__info_fav" onclick="favActive()">
+									<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14.6875 0C13.6022 0 12.6072 0.350602 11.7302 1.04209C10.8894 1.70502 10.3296 2.54939 10 3.16338C9.67043 2.54935 9.11063 1.70502 8.2698 1.04209C7.39277 0.350602 6.39777 0 5.3125 0C2.28391 0 0 2.52546 0 5.87445C0 9.49253 2.84934 11.968 7.16285 15.7154C7.89535 16.3518 8.72563 17.0732 9.58859 17.8425C9.70234 17.9441 9.84844 18 10 18C10.1516 18 10.2977 17.9441 10.4114 17.8426C11.2745 17.0731 12.1047 16.3518 12.8376 15.715C17.1507 11.968 20 9.49253 20 5.87445C20 2.52546 17.7161 0 14.6875 0Z" fill="#E3E3E3"/>
+									</svg>
 								</button>
 							</div>
 						</div>
@@ -209,104 +211,10 @@
 									<img src="img/moscow.svg" alt="">
 									<p>Пушкинская</p>
 								</div>
-								<button class="proposal__info_fav">
-									<img src="img/heart.svg" alt="">
-								</button>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col col-md-6 col-xl-3">
-					<a href="#" class="proposal__item">
-						<div class="swiper proposal__slider">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<img src="img/slider_1.jpg" alt="">
-								</div>
-								<div class="swiper-slide">
-									<img src="img/slider_1.jpg" alt="">
-								</div>
-								<div class="swiper-slide">
-									<img src="img/slider_1.jpg" alt="">
-								</div>
-								<div class="swiper-slide">
-									<img src="img/slider_1.jpg" alt="">
-								</div>
-							</div>
-							<div class="swiper-button-next"></div>
-							<div class="swiper-button-prev"></div>
-						</div>
-						<div class="proposal__info">
-							<div class="proposal__info_price">
-								<p><span>55 000 </span>₽/мес</p>
-							</div>
-							<div class="proposal__info_area">
-								<div>
-									<span></span>
-									<p>1-комн.</p>
-								</div>
-								<div>
-									<span></span>
-									<p>40 м2</p>
-								</div>
-							</div>
-							<div class="proposal__info_desc">
-								<p>Однокомнатная квартира в стиле “лофт” для маленькой семьи</p>
-							</div>
-							<div class="proposal__info_bottom">
-								<div class="proposal__info_metro">
-									<img src="img/moscow.svg" alt="">
-									<p>Пушкинская</p>
-								</div>
-								<button class="proposal__info_fav">
-									<img src="img/heart.svg" alt="">
-								</button>
-							</div>
-						</div>
-					</a>
-					<a href="#" class="proposal__item">
-						<div class="swiper proposal__slider">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<img src="img/slider_1.jpg" alt="">
-								</div>
-								<div class="swiper-slide">
-									<img src="img/slider_1.jpg" alt="">
-								</div>
-								<div class="swiper-slide">
-									<img src="img/slider_1.jpg" alt="">
-								</div>
-								<div class="swiper-slide">
-									<img src="img/slider_1.jpg" alt="">
-								</div>
-							</div>
-							<div class="swiper-button-next"></div>
-							<div class="swiper-button-prev"></div>
-						</div>
-						<div class="proposal__info">
-							<div class="proposal__info_price">
-								<p><span>55 000 </span>₽/мес</p>
-							</div>
-							<div class="proposal__info_area">
-								<div>
-									<span></span>
-									<p>1-комн.</p>
-								</div>
-								<div>
-									<span></span>
-									<p>40 м2</p>
-								</div>
-							</div>
-							<div class="proposal__info_desc">
-								<p>Однокомнатная квартира в стиле “лофт” для маленькой семьи</p>
-							</div>
-							<div class="proposal__info_bottom">
-								<div class="proposal__info_metro">
-									<img src="img/moscow.svg" alt="">
-									<p>Пушкинская</p>
-								</div>
-								<button class="proposal__info_fav">
-									<img src="img/heart.svg" alt="">
+								<button type="button" class="proposal__info_fav" onclick="favActive()">
+									<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14.6875 0C13.6022 0 12.6072 0.350602 11.7302 1.04209C10.8894 1.70502 10.3296 2.54939 10 3.16338C9.67043 2.54935 9.11063 1.70502 8.2698 1.04209C7.39277 0.350602 6.39777 0 5.3125 0C2.28391 0 0 2.52546 0 5.87445C0 9.49253 2.84934 11.968 7.16285 15.7154C7.89535 16.3518 8.72563 17.0732 9.58859 17.8425C9.70234 17.9441 9.84844 18 10 18C10.1516 18 10.2977 17.9441 10.4114 17.8426C11.2745 17.0731 12.1047 16.3518 12.8376 15.715C17.1507 11.968 20 9.49253 20 5.87445C20 2.52546 17.7161 0 14.6875 0Z" fill="#E3E3E3"/>
+									</svg>
 								</button>
 							</div>
 						</div>
@@ -354,8 +262,10 @@
 									<img src="img/moscow.svg" alt="">
 									<p>Пушкинская</p>
 								</div>
-								<button class="proposal__info_fav">
-									<img src="img/heart.svg" alt="">
+								<button type="button" class="proposal__info_fav" onclick="favActive()">
+									<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14.6875 0C13.6022 0 12.6072 0.350602 11.7302 1.04209C10.8894 1.70502 10.3296 2.54939 10 3.16338C9.67043 2.54935 9.11063 1.70502 8.2698 1.04209C7.39277 0.350602 6.39777 0 5.3125 0C2.28391 0 0 2.52546 0 5.87445C0 9.49253 2.84934 11.968 7.16285 15.7154C7.89535 16.3518 8.72563 17.0732 9.58859 17.8425C9.70234 17.9441 9.84844 18 10 18C10.1516 18 10.2977 17.9441 10.4114 17.8426C11.2745 17.0731 12.1047 16.3518 12.8376 15.715C17.1507 11.968 20 9.49253 20 5.87445C20 2.52546 17.7161 0 14.6875 0Z" fill="#E3E3E3"/>
+									</svg>
 								</button>
 							</div>
 						</div>
@@ -401,8 +311,10 @@
 									<img src="img/moscow.svg" alt="">
 									<p>Пушкинская</p>
 								</div>
-								<button class="proposal__info_fav">
-									<img src="img/heart.svg" alt="">
+								<button type="button" class="proposal__info_fav" onclick="favActive()">
+									<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14.6875 0C13.6022 0 12.6072 0.350602 11.7302 1.04209C10.8894 1.70502 10.3296 2.54939 10 3.16338C9.67043 2.54935 9.11063 1.70502 8.2698 1.04209C7.39277 0.350602 6.39777 0 5.3125 0C2.28391 0 0 2.52546 0 5.87445C0 9.49253 2.84934 11.968 7.16285 15.7154C7.89535 16.3518 8.72563 17.0732 9.58859 17.8425C9.70234 17.9441 9.84844 18 10 18C10.1516 18 10.2977 17.9441 10.4114 17.8426C11.2745 17.0731 12.1047 16.3518 12.8376 15.715C17.1507 11.968 20 9.49253 20 5.87445C20 2.52546 17.7161 0 14.6875 0Z" fill="#E3E3E3"/>
+									</svg>
 								</button>
 							</div>
 						</div>
@@ -450,8 +362,10 @@
 									<img src="img/moscow.svg" alt="">
 									<p>Пушкинская</p>
 								</div>
-								<button class="proposal__info_fav">
-									<img src="img/heart.svg" alt="">
+								<button type="button" class="proposal__info_fav" onclick="favActive()">
+									<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14.6875 0C13.6022 0 12.6072 0.350602 11.7302 1.04209C10.8894 1.70502 10.3296 2.54939 10 3.16338C9.67043 2.54935 9.11063 1.70502 8.2698 1.04209C7.39277 0.350602 6.39777 0 5.3125 0C2.28391 0 0 2.52546 0 5.87445C0 9.49253 2.84934 11.968 7.16285 15.7154C7.89535 16.3518 8.72563 17.0732 9.58859 17.8425C9.70234 17.9441 9.84844 18 10 18C10.1516 18 10.2977 17.9441 10.4114 17.8426C11.2745 17.0731 12.1047 16.3518 12.8376 15.715C17.1507 11.968 20 9.49253 20 5.87445C20 2.52546 17.7161 0 14.6875 0Z" fill="#E3E3E3"/>
+									</svg>
 								</button>
 							</div>
 						</div>
@@ -497,8 +411,110 @@
 									<img src="img/moscow.svg" alt="">
 									<p>Пушкинская</p>
 								</div>
-								<button class="proposal__info_fav">
-									<img src="img/heart.svg" alt="">
+								<button type="button" class="proposal__info_fav" onclick="favActive()">
+									<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14.6875 0C13.6022 0 12.6072 0.350602 11.7302 1.04209C10.8894 1.70502 10.3296 2.54939 10 3.16338C9.67043 2.54935 9.11063 1.70502 8.2698 1.04209C7.39277 0.350602 6.39777 0 5.3125 0C2.28391 0 0 2.52546 0 5.87445C0 9.49253 2.84934 11.968 7.16285 15.7154C7.89535 16.3518 8.72563 17.0732 9.58859 17.8425C9.70234 17.9441 9.84844 18 10 18C10.1516 18 10.2977 17.9441 10.4114 17.8426C11.2745 17.0731 12.1047 16.3518 12.8376 15.715C17.1507 11.968 20 9.49253 20 5.87445C20 2.52546 17.7161 0 14.6875 0Z" fill="#E3E3E3"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col col-md-6 col-xl-3">
+					<a href="#" class="proposal__item">
+						<div class="swiper proposal__slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+						<div class="proposal__info">
+							<div class="proposal__info_price">
+								<p><span>55 000 </span>₽/мес</p>
+							</div>
+							<div class="proposal__info_area">
+								<div>
+									<span></span>
+									<p>1-комн.</p>
+								</div>
+								<div>
+									<span></span>
+									<p>40 м2</p>
+								</div>
+							</div>
+							<div class="proposal__info_desc">
+								<p>Однокомнатная квартира в стиле “лофт” для маленькой семьи</p>
+							</div>
+							<div class="proposal__info_bottom">
+								<div class="proposal__info_metro">
+									<img src="img/moscow.svg" alt="">
+									<p>Пушкинская</p>
+								</div>
+								<button type="button" class="proposal__info_fav" onclick="favActive()">
+									<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14.6875 0C13.6022 0 12.6072 0.350602 11.7302 1.04209C10.8894 1.70502 10.3296 2.54939 10 3.16338C9.67043 2.54935 9.11063 1.70502 8.2698 1.04209C7.39277 0.350602 6.39777 0 5.3125 0C2.28391 0 0 2.52546 0 5.87445C0 9.49253 2.84934 11.968 7.16285 15.7154C7.89535 16.3518 8.72563 17.0732 9.58859 17.8425C9.70234 17.9441 9.84844 18 10 18C10.1516 18 10.2977 17.9441 10.4114 17.8426C11.2745 17.0731 12.1047 16.3518 12.8376 15.715C17.1507 11.968 20 9.49253 20 5.87445C20 2.52546 17.7161 0 14.6875 0Z" fill="#E3E3E3"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</a>
+					<a href="#" class="proposal__item">
+						<div class="swiper proposal__slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/slider_1.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+						<div class="proposal__info">
+							<div class="proposal__info_price">
+								<p><span>55 000 </span>₽/мес</p>
+							</div>
+							<div class="proposal__info_area">
+								<div>
+									<span></span>
+									<p>1-комн.</p>
+								</div>
+								<div>
+									<span></span>
+									<p>40 м2</p>
+								</div>
+							</div>
+							<div class="proposal__info_desc">
+								<p>Однокомнатная квартира в стиле “лофт” для маленькой семьи</p>
+							</div>
+							<div class="proposal__info_bottom">
+								<div class="proposal__info_metro">
+									<img src="img/moscow.svg" alt="">
+									<p>Пушкинская</p>
+								</div>
+								<button type="button" class="proposal__info_fav" onclick="favActive()">
+									<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14.6875 0C13.6022 0 12.6072 0.350602 11.7302 1.04209C10.8894 1.70502 10.3296 2.54939 10 3.16338C9.67043 2.54935 9.11063 1.70502 8.2698 1.04209C7.39277 0.350602 6.39777 0 5.3125 0C2.28391 0 0 2.52546 0 5.87445C0 9.49253 2.84934 11.968 7.16285 15.7154C7.89535 16.3518 8.72563 17.0732 9.58859 17.8425C9.70234 17.9441 9.84844 18 10 18C10.1516 18 10.2977 17.9441 10.4114 17.8426C11.2745 17.0731 12.1047 16.3518 12.8376 15.715C17.1507 11.968 20 9.49253 20 5.87445C20 2.52546 17.7161 0 14.6875 0Z" fill="#E3E3E3"/>
+									</svg>
 								</button>
 							</div>
 						</div>

@@ -60,3 +60,10 @@ tabs('.tabs', '.tabs__item', '.tabs__wrap', 'active');
 
 	};
 	hamburger('.hamburger', '.nav', '.header-page');
+
+//---------------------Favorite-------------
+
+	function favActive() {
+		event.preventDefault();
+		event.target.classList.toggle('active');
+	}
